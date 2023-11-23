@@ -1,7 +1,7 @@
 import { multiLang } from "../translations/multiLang";
 import { EXCLUDED_COUNTRIES } from "../options/excludedCountries";
-import { RTL_COUNTRIES } from "@/options/rtlCountries";
-import { GEO_INFO } from "@/options/geoInfo";
+import { RTL_COUNTRIES } from "../options/rtlCountries";
+import { GEO_INFO } from "../options/geoInfo";
 const DEFAULT_LANG = "en";
 
 export function getUrlParameterValue(parameter) {

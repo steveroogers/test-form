@@ -1,5 +1,5 @@
 import psl from "psl";
-import { WORKER_SUB_DOMAIN } from "@/options/workerSubDomain";
+import { WORKER_SUB_DOMAIN } from "../options/workerSubDomain";
 
 const LEAD_URL = "/api/v1/subscription";
 const VERIFY_URL = "/api/v1/subscription/send-sms";
