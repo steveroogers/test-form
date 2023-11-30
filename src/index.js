@@ -1,8 +1,7 @@
-import Vue from "vue";
 import RegForm from "./components/RegForm.vue";
 
 const regForm = {
-  install: function (Vue, options) {
+  install: function (Vue) {
     Vue.component("reg-form", RegForm);
   },
 };
