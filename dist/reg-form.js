@@ -23062,6 +23062,8 @@ vee_validate_esm_extend("email", utils_rules_email);
     },
 
     getBodyForRegistrationRequest() {
+      var _sessionStorage$getIt;
+
       let countryData = this.iti.getSelectedCountryData();
       let searchParams = getSearchParams();
       let uuid = getCookie("tr_uuid");
@@ -23075,7 +23077,7 @@ vee_validate_esm_extend("email", utils_rules_email);
         region: getGeoValue(this.geoInfo, "cf-region", "region"),
         regionIso: getGeoValue(this.geoInfo, "cf-region-code", "region_iso"),
         countryCode: countryData.iso2,
-        quizData: sessionStorage.getItem("quiz-data")?.length ? sessionStorage.getItem("quiz-data") : null,
+        quizData: (_sessionStorage$getIt = sessionStorage.getItem("quiz-data")) !== null && _sessionStorage$getIt !== void 0 && _sessionStorage$getIt.length ? sessionStorage.getItem("quiz-data") : null,
         countryByIp: this.countryByIp
       }; // nginx creates tr_uuid in cookie
 
