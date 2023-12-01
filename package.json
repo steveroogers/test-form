@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target wc --inline-vue --name reg-form src/components/RegForm.vue",
+    "build-def": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test-dev": "vue-cli-service test:unit --watch",
     "lint": "vue-cli-service lint"
@@ -39,6 +40,7 @@
     "sass": "^1.32.7",
     "sass-loader": "^12.0.0",
     "tough-cookie": "^4.1.2",
+    "url-loader": "^4.1.1",
     "vue-template-compiler": "^2.6.14"
   }
 }
